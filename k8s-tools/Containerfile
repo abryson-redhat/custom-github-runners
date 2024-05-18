@@ -1,0 +1,29 @@
+ARG BASE_IMG=quay.io/redhat-github-actions/runner:latest
+FROM $BASE_IMG AS k8s-tools-runner
+
+USER root
+
+ARG HELM_VERSION="3.5.0"
+ENV HELM_VERSION=${HELM_VERSION}
+
+ARG KN_VERSION="0.19.1"
+ENV KN_VERSION=${KN_VERSION}
+
+#ARG OC_VERSION="4.6.18"
+ARG OC_VERSION="4.13.38"
+ENV OC_VERSION=${OC_VERSION}
+
+ARG TKN_VERSION="0.15.0"
+ENV TKN_VERSION=${TKN_VERSION}
+
+#ARG YQ_VERSION="4.6.0"
+ARG YQ_VERSION="4.40.5"
+ENV YQ_VERSION=${YQ_VERSION}
+
+COPY ./install-tools.sh .
+COPY ./generate_uuid.py .
+
+RUN ./install-tools.sh
+RUN rm ./install-tools.sh
+
+USER $UID
