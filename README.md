@@ -78,13 +78,13 @@ This is a list of runner images built for this demo.  Not all were utilized.  A 
 ---
 
 ### Base runner image
-> **base**
-├── Containerfile
-├── entrypoint.sh
-├── get_github_app_token.sh
-├── get-runner-release.sh
-├── README.md
-├── register.sh
+> **base**\
+├── Containerfile\
+├── entrypoint.sh\
+├── get_github_app_token.sh\
+├── get-runner-release.sh\
+├── README.md\
+├── register.sh\
 └── uid.sh
 
 This image is the parent image for all other images.  
@@ -92,8 +92,8 @@ This image is the parent image for all other images.
 ---
 
 ### Java runner image
-> **java**
-├── Containerfile
+> **java**\
+├── Containerfile\
 └── README.md
 
 This is a Java 11 JRE enabled image.  You can use it to host java applications.
@@ -101,8 +101,8 @@ This is a Java 11 JRE enabled image.  You can use it to host java applications.
 ---
 
 ### Java build runner image
-> **java-build-11**
-├── Containerfile
+> **java-build-11**\
+├── Containerfile\
 └── README.md
 
 This is a **Java 11 JDK** enabled image.  It also includes **maven** and **gradle** for executing java builds.
@@ -110,8 +110,8 @@ This is a **Java 11 JDK** enabled image.  It also includes **maven** and **gradl
 ---
 
 ### Buildah runner image
-> **buildah**
-├── Containerfile
+> **buildah**\
+├── Containerfile\
 └── README.md
 
 This is a RHEL based image with **buildah** for creating OCI images.  For this demo, it is used for building **Dockerfile / Containerfile** based images.
@@ -119,8 +119,8 @@ This is a RHEL based image with **buildah** for creating OCI images.  For this d
 ---
 
 ### dotnet 6.0 runtime image
-> **dotnet-6.0**
-├── Containerfile
+> **dotnet-6.0**\
+├── Containerfile\
 └── README.md
 
 This is a dotnet 6.0 runtime image.  It is not utilized for this demo.
