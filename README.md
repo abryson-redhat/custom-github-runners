@@ -1,5 +1,3 @@
-# custom-github-runners
-
 # Table of Contents
 1. [Overview](#Overview)
 2. [Runners](#Runners)
@@ -21,7 +19,7 @@ This project has a number of custom GitHub Runner images.  Not all have been uti
 
 ## Runners
 
-This is a list of runner images built for this demo.  Not all were utilized.  A [separate project](#) is used for installation of the runners on an OpenShift cluster.
+This is a list of runner images built for this demo.  Not all were utilized.  A [separate project](https://github.com/abryson-redhat/github-runner-installer) is used for installation of the runners on an OpenShift cluster.
 
 <br/>
 
@@ -156,7 +154,7 @@ The following is a list of steps to be followed when building runner images.
   podman push localhost/buildah-runner-image:v1.0.1 <remote registry url>/repository/smbc-demo/buildah-runner-image:v1.0.1
   ```
 
-The image is now ready for use by the [runner installation project](#).  
+The image is now ready for use by the [runner installation project](https://github.com/abryson-redhat/github-runner-installer).  
 
 > :information_source: You will need to make sure that project points to your \<remote registry url\>.
 
